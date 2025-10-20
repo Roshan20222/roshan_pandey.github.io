@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roshan Pandey — Portfolio</title>
+  <meta name="description" content="Personal site / portfolio for Roshan Pandey" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Roshan Pandey</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Roshan Pandey</h1>
+          <p class="tagline">I build things — web apps, open source, and tools that people love.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">See projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="avatar">R</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>Short bio: Replace this with 2–3 sentences about who you are, what you do, and what you care about.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Selected projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3><a href="#">Project One</a></h3>
+            <p>Short description of project one. Mention stack and a highlight.</p>
+            <div class="meta">
+              <span class="tag">JavaScript</span>
+              <a class="link" href="#" target="_blank" rel="noopener">View →</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3><a href="#">Project Two</a></h3>
+            <p>Short description of project two.</p>
+            <div class="meta">
+              <span class="tag">Python</span>
+              <a class="link" href="#" target="_blank" rel="noopener">View →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together, email me at <a href="mailto:you@example.com">you@example.com</a> or reach out on social.</p>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Roshan Pandey — Built with ❤</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
