@@ -1,99 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Roshan Pandey</title>
-  <meta name="description" content="Personal site / portfolio for Roshan Pandey" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Roshan Pandey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">Roshan Pandey</a>
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    </div>
-  </header>
+    <header class="top-nav">
+            <nav>
+                <a>  Roshan Pandey</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="assets/Roshan_Pandey_cv_2025.pdf">CV</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="darkModeToggle">🌙</button>
+        </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1>Roshan Pandey</h1>
-          <p class="tagline">I am a final-year undergraduate student in Electronics, Communication, and Information Engineering at Tribhuvan University, Kathmandu Engineering College, advised by Er. Anmol Ratna Bajracharya.</p>
-          <div class="hero-cta">
-            <a class="btn primary" href="#projects">See projects</a>
-            <a class="btn ghost" href="#contact">Contact me</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="avatar">R</div>
-        </div>
-      </div>
-    </section>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="download.jpeg" alt="Roshan Pandey" class="profile-photo">
+        <h1>Roshan Pandey</h1>
+        <p class="affiliation">🏛️ Tribhuvan University</p>
+        <nav class="social-links">
+            <a href="mailto:pandeyroshan2021@outlook.com">📧 Email</a>
+            <a href="https://github.com/Roshan20222" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            <a href="https://x.com/RoshanP2831029">🐦 X (Twitter)</a>
+            <a href="https://bsky.app/profile/roshan01.bsky.social">🦋 Bluesky</a>
+        </nav>
+    </aside>
 
-    <section id="about" class="container about">
-      <h2>About</h2>
-      <p>My research interests span robotics, computer vision, machine learning, and natural language processing, with a focus on integrating perception, learning, and interaction to build intelligent autonomous systems.
+    <!-- Main Content -->
+    <main class="content">
 
-I worked as a Natural Language Processing Research Intern at NAAMII, where I explored text summarization, transliteration, and text-to-speech synthesis for low-resource Nepali language processing. Previously, I served as a Data Science Intern at F1Soft International, developing and deploying machine learning models for production environments. As an undergraduate researcher, I designed an object detection–based automated mobile robot, integrating computer vision and motion planning for autonomous navigation and manipulation.
+        <section id="about">
+            <h2>About Me</h2>
+           <p>Hello! I am a final-year undergraduate student at Tribhuvan University. My research focuses on developing <strong>reliable and sustainable human–computer interaction in healthcare using machine learning</strong>.
+    Broadly, I am interested in:
+  </p>
+   <ol>
+      <li>Human–Computer Interaction</li>
+      <li>Computer Vision</li>
+      <li>Robotics</li>
+      <li>Natural Language Processing</li>
+    </ol>
+        </section>
 
-My long-term goal is to advance research at the intersection of learning and perception for embodied AI—enabling machines that can see, reason, and interact seamlessly with the real world.</p>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Electronics, Communication & Information Engineering</strong> — Tribhuwan University, Kathmandu Engineering College</li>
+            
+            </ul>
+        </section>
 
-    <section id="projects" class="container projects">
-      <h2>Selected projects</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="card-media"></div>
-          <div class="card-body">
-            <h3><a href="#">Project One</a></h3>
-            <p>Short description of project one. Mention stack and a highlight.</p>
-            <div class="meta">
-              <span class="tag">JavaScript</span>
-              <a class="link" href="#" target="_blank" rel="noopener">View →</a>
+        <section id="projects">
+            <h2>Selected Projects</h2>
+            <div class="project">
+                <h3>Object Detection Based Automated Mobile Robot</h3>
+                <img src="Coordinate Frame of 4 DOF Arm Robot.png" alt="robotic arm" class="project-image">
+                <div class="project-links">
+                    <a href="https://roshan20222.github.io/Automated-Mobile-Robot-Object-Detection/" target="_blank" class="btn btn-website">🌐 Website</a>
+                    <a href="major_project_paper.pdf.pdf" class="btn btn-paper">📄 Paper</a>
+                    <a href="https://github.com/Roshan20222/Automated-Mobile-Robot-Object-Detection" class="btn btn-code">💻 Code</a>
+                </div>
             </div>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media"></div>
-          <div class="card-body">
-            <h3><a href="#">Project Two</a></h3>
-            <p>Short description of project two.</p>
-            <div class="meta">
-              <span class="tag">Python</span>
-              <a class="link" href="#" target="_blank" rel="noopener">View →</a>
+            <div class="project">
+                <h3>SAM2-Lite: Bringing Real-Time Video Segmentation to Edge Devices Through Memory-Aware Knowledge Distillation</h3>
+                <img src="graphical_abstract_svg.svg" alt="Graphical Abstract" class="project-image">
+                <div class="project-links">
+                    <a href="https://roshan20222.github.io/SAM2-Lite/" target="_blank" class="btn btn-website">🌐 Website</a>
+                    <a href="SAM-2 lite.pdf.pdf" class="btn btn-paper">📄 Paper</a>
+                    <a href="https://github.com/Roshan20222/SAM2-Lite" class="btn btn-code">💻 Code</a>
+                </div>
             </div>
-          </div>
-        </article>
-      </div>
-    </section>
+            
+        </section>
 
-    <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>If you'd like to work together, email me at <a href="mailto:you@example.com">you@example.com</a> or reach out on social.</p>
-      <div class="social-links">
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-      </div>
-    </section>
-  </main>
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>NLP Research Intern</strong>, NAAMII — Nepali NLP, summarization, speech</li>
+                <li><strong>Undergrad Researcher</strong>, Tribhuvan University — Robotics, ML, computer vision</li>
+                <li><strong>Data Science Intern</strong>, F1Soft — ML pipelines, dashboards</li>
+                <li><strong>Backend Developer</strong> — API development, database management, cloud deployment</li>
+            </ul>
+        </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Roshan Pandey — Built with ❤</p>
-    </div>
-  </footer>
+        <section>
+            <h2>Skills & Awards</h2>
+            <ul>
+                <li>Programming: Python, C, Bash, Java, Scala, x86 ASM, HTML, JS</li>
+                <li>AI/Big Data: TensorFlow, JAX, Pandas, SQL, Spark</li>
+                <li>Cloud/DevOps: AWS, GCP, Docker, Kubernetes</li>
+                <li>Awards: Tribhuwan University Entrance Scholarship (2020)</li>
+            </ul>
+        </section>
 
-  <script src="script.js"></script>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>The best way to reach me is via email. I'm always open to discussing new projects, research, or opportunities.</p>
+            <div class="email-container">
+                <a href="mailto:pandeyroshan2021@outlook.com" id="emailAddress">pandeyroshan2021@outlook.com</a>
+                <button id="copyEmailBtn" class="copy-btn" title="Copy email to clipboard">📋</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Roshan Pandey</p>
+        </footer>
+    </main>
+</div>
+
+<!-- Back to Top Button -->
+<button id="backToTopBtn" title="Go to top">⬆️</button>
+
+<script src="assets/script.js"></script>
+
 </body>
 </html>
